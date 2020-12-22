@@ -55,7 +55,7 @@ export default {
         alert("Digita tu contraseña");
       } else {
         axios
-          .post("http://localhost:8000/login", this.form)
+          .post("https://cinsell.herokuapp.com/login", this.form)
           .then(result => {
             let auth = result.data.Autenticado;
             if (user == "" || pass == "") {
